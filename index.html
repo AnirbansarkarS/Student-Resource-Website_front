@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Resource Website</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<body>
+
+  <!-- INTRO SCREEN -->
+  <div id="introScreen">
+    <div class="lightStreak"></div>
+    <div class="introText">Welcome</div>
+  </div>
+
+  <!-- Page 1 -->
+  <div id="page1">
+    <!-- Navbar -->
+    <div id="NAV">
+      <!-- Optional Logo -->
+      <!-- <img src="logo.png" alt="Logo"> -->
+      <div id="nav-part2">
+        <h4><a href="user.html">LOGIN</a></h4>
+        <h4><a href="user.html">SIGNUP</a></h4>
+      </div>
+    </div>
+    <section class="top">
+   
+    <!-- Text Section -->
+    <section id="text">
+      <h1>Welcome to Resource Page</h1>
+      <p>Your one-stop destination for notes, books, and guides.</p>
+    </section class="spline-container">
+    <!-- <iframe src='https://my.spline.design/robotfollowcursorforlandingpage-xMyYqbeUMvoEtzJpA1JVKlJA/' frameborder='0' width='150%' height='800vh'></iframe> -->
+      <iframe class="anim" src='https://my.spline.design/meeet-kSuHuPEQsW8SVP06NQmfdP9c/' frameborder='0' width='100%' height='100%'></iframe>
+</section>
+
+    <!-- cards -->
+   <section id="resources">
+  <h2 class="title">EXPLORE COURSES</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <h3>B.Tech</h3>
+        <p>Engineering syllabus, notes & previous papers.</p>
+        <button class="btn-water"><a class="btn-water" href="courses.html">open</a></button>
+      </div>
+
+      <div class="swiper-slide">
+        <h3>BCA</h3>
+        <p>Computer applications syllabus & study material.</p>
+      <button class="btn-water"><a class="btn-water" href="bca.html">open</a></button>
+      </div>
+
+      <div class="swiper-slide">
+              <h3>B.Tech(TIU)</h3>
+              <p>Take Notes and PYQs you want</p>
+            <button class="btn-water"><a class="btn-water" href="B-Tech/btechTIU.html">open</a></button>
+            </div>
+
+          
+
+      <div class="swiper-slide">
+        <h3>BBA</h3>
+        <p>Business administration resources & guides.</p>
+  <button class="btn-water"><a class="btn-water" href="bba.html">open</a></button>
+      </div>
+
+      </div>
+
+    <!-- Swiper Controls -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-image">
+      <img src="assets/index1.jpg" alt="Education AI">
+    </div>
+    <div class="hero-text">
+      <h1>Hello <a style="color:#2963d6;">Everyone</a></h1>
+      <h1><span id="edu-type"></span></h1>
+      <p>
+        Unlock your potential with our AI-powered educational platform. Learn new skills,
+        track your progress, and explore knowledge designed to guide your success 24/7.
+      </p>
+      <button ><a href="user.html">Start Learning</a></button>
+    </div>
+  </section>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-image">
+      <img src="assets/stu.png" alt="Education AI">
+    </div>
+    <div class="hero-text">
+      <h1><a style="color:#2963d6;">About</a></h1>
+      <h1><span id="edu-type"></span></h1>
+      <p>
+        This website is designed to provide students with easy access to study materials, notes, and resources
+        for various courses and departments. Whether you're in B.Tech, BCA, BBA, or any other program,
+        you'll find valuable resources to enhance your learning experience.
+      </p>
+      <button onclick="alert('Redirecting to Courses...')">Start Learning</button>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+
+      <!-- About -->
+      <div class="footer-col">
+        <p class="footer-para">
+          A dedicated platform for MAKAUT University students where you can
+          access notes, study materials, and resources for all departments
+          and courses including B.Tech, BCA, BBA, and more.
+        </p>
+      </div>
+
+      <!-- Address -->
+      <div class="footer-col">
+        <h3 class="text-office">
+          Address
+          <div class="underline"><span></span></div>
+        </h3>
+        <p>Sector 5</p>
+        <p>Saltlake</p>
+        <p>Kolkata, West Bengal, India</p>
+        <p class="email">studentresoursewebsite@gmail.com</p>
+        <p class="phone">+91 98765 43210</p>
+      </div>
+
+      <!-- Menu -->
+      <div class="footer-col">
+        <h3>
+          Menu
+          <div class="underline"><span></span></div>
+        </h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Notes</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Departments</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter + Social -->
+      <div class="footer-col">
+        <h3>
+          Newsletter
+          <div class="underline"><span></span></div>
+        </h3>
+        <form action="">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="text" placeholder="Enter your email">
+          <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+        </form>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      © 2025 Student Resource Website | All Rights Reserved
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <!-- Typed.js Animation -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#edu-type', {
+      strings: [
+        "<span style='color:#4a6cf7'>Learn Smarter</span> with <span style='color:#00c6ff'>AI</span>",
+        "<span style='color:#ff6b6b'>Empowering</span> Education for <span style='color:#28a745'>All</span>",
+        "Your <span style='color:#ff7eb3'>Journey</span> to <span style='color:#f39c12'>Success</span> Starts Here"
+      ],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+  </script>
+
+
+
+</body>
+</html>
