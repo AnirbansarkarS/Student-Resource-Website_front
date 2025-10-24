@@ -49,6 +49,7 @@ gsap.from("#text p", {
   delay: 0.3,
   ease: "power3.out"
 });
+
 // login and register js
 
 // Intro animation then show auth
